@@ -19,14 +19,16 @@ A comprehensive penetration test was conducted across target subnets `10.5.5.0/2
   1. Authenticated to `10.5.5.12` with initial credentials `admin / password` and configured DVWA security to Low.
      ![Credentials](Images/DVWA_Login.png)
       ![Credentials](Images/DVWA_Interface.png) 
-  3. Injected SQL payloads into the user submission form to extract user account hashes from the database.
+  2. Injected SQL payloads into the user submission form to extract user account hashes from the database.
      ![Query](Images/DVWA_Queery.png) 
-  4. Extracted Bob Smith’s credential hash and cracked the plaintext password using hash-cracking utilities.
+  3. Extracted Bob Smith’s credential hash and cracked the plaintext password using hash-cracking utilities.
      ![Query](Images/hash.png)
-  5. Established an SSH connection to `192.168.0.10` as `smithy` (`smithy@192.168.0.10`) using the cracked password.
+  4. Established an SSH connection to `192.168.0.10` as `smithy` (`smithy@192.168.0.10`) using the cracked password.
       ![Query](Images/SSH_Login.png)
-  6. Inspected the user home directory to recover the flag file.
+  5. Inspected the user home directory to recover the flag file.
      ![Query](Images/Smithy.png)
+
+
 * **Proof of Concept & Results:**
   * **Bob Smith Password:** `password`
     ![Query](Images/hash.png)
