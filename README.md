@@ -21,8 +21,9 @@ A comprehensive penetration test was conducted across target subnets `10.5.5.0/2
       ![Credentials](Images/DVWA_Interface.png) 
   3. Injected SQL payloads into the user submission form to extract user account hashes from the database.
      ![Query](Images/DVWA_Queery.png) 
-  5. Extracted Bob Smith’s credential hash and cracked the plaintext password using hash-cracking utilities.
-  6. Established an SSH connection to `192.168.0.10` as `smithy` (`smithy@192.168.0.10`) using the cracked password.
+  4. Extracted Bob Smith’s credential hash and cracked the plaintext password using hash-cracking utilities.
+     ![Query](Images/hash.png)
+  5. Established an SSH connection to `192.168.0.10` as `smithy` (`smithy@192.168.0.10`) using the cracked password.
   7. Inspected the user home directory to recover the flag file.
 * **Proof of Concept & Results:**
   * **Bob Smith Password:** `password`
