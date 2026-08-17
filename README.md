@@ -29,13 +29,14 @@ A comprehensive penetration test was conducted across target subnets `10.5.5.0/2
      ![Query](Images/Smithy.png)
 * **Proof of Concept & Results:**
   * **Bob Smith Password:** `password`
+    ![Query](Images/hash.png)
   * **SSH Access Command:** `ssh smithy@192.168.0.10`
+  * ![Query](Images/SSH_Login.png)
   * **Flag Filename:** `my_passwords.txt`
+    ![Query](Images/Smithy.png)
   * **Flag Content:** `Congratulations! You found the flag for Challenge 1!`
   * **Flag Code:** `8748wf8J`
-
-![SQL Injection and Target Compromise](Images/DVWA.png)  
-*Figure 1: Executing SQL injection and accessing the target via SSH to extract the Challenge 1 flag.*
+      ![Query](Images/Flagcode.png)
 
 * **Remediation Methods:**
   1. **Prepared Statements:** Utilize parameterized queries to segregate user input from SQL commands.
@@ -60,9 +61,6 @@ A comprehensive penetration test was conducted across target subnets `10.5.5.0/2
   * **Flag File Location:** `Config`
   * **Flag Content:** `Great work! You found the flag file for Challenge 2!`
   * **Flag Code:** `aWe-4975`
-
-![Web Directory Listing Vulnerability](images/challenge2-directory.png)  
-*Figure 2: Exposed directory index displaying sensitive web server subdirectories and flag files.*
 
 * **Remediation Methods:**
   1. **Disable Directory Indexing:** Configure web server controls (e.g., `Options -Indexes` in Apache) to deny directory browsing.
