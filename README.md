@@ -28,7 +28,7 @@ A comprehensive penetration test was conducted across target subnets `10.5.5.0/2
   * **Flag Content:** `Congratulations! You found the flag for Challenge 1!`
   * **Flag Code:** `8748wf8J`
 
-![SQL Injection and Target Compromise](Images/DVWA.jpg)  
+![SQL Injection and Target Compromise](Images/DVWA.png)  
 *Figure 1: Executing SQL injection and accessing the target via SSH to extract the Challenge 1 flag.*
 
 * **Remediation Methods:**
