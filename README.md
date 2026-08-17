@@ -62,7 +62,9 @@ A comprehensive penetration test was conducted across target subnets `10.5.5.0/2
 ![Query](Images/ffuf1.png)
 ![Query](Images/ffuf2.png)
   2. Identified exposed directories displaying raw index views via web browser URL manipulation.
-  3. Navigated through index paths to uncover hidden resources (`db_form.html`) and retrieve the Challenge 2 flag code.
+     ![Query](Images/Config_Targetpath.png)
+![Query](Images/Docs.png)
+  4. Navigated through index paths to uncover hidden resources (`db_form.html`) and retrieve the Challenge 2 flag code.
 * **Proof of Concept & Results:**
   * **Indexed Web Directories:** `Config` and `docs`
   * **Target File Search Paths:** `Config` and `external`
