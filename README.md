@@ -24,7 +24,6 @@ A comprehensive penetration test was conducted across target subnets `10.5.5.0/2
   3. Extracted Bob Smith’s credential hash and cracked the plaintext password using hash-cracking utilities.
      ![Query](Images/hash.png)
   4. Established an SSH connection to `192.168.0.10` as `smithy` (`smithy@192.168.0.10`) using the cracked password.
-     ![Query](Images/SSH_Login.png)
   5. Inspected the user home directory to recover the flag file.
      ![Query](Images/Smithy.png)
 
