@@ -17,7 +17,8 @@ A comprehensive penetration test was conducted across target subnets `10.5.5.0/2
 * **Vulnerability:** SQL Injection (SQLi) in web input forms
 * **Execution Summary:**
   1. Authenticated to `10.5.5.12` with initial credentials `admin / password` and configured DVWA security to Low.
-     ![Credentials](Images/DVWA_Login.png) 
+     ![Credentials](Images/DVWA_Login.png)
+      ![Credentials](Images/DVWA_Interface.png) 
   3. Injected SQL payloads into the user submission form to extract user account hashes from the database.
   4. Extracted Bob Smith’s credential hash and cracked the plaintext password using hash-cracking utilities.
   5. Established an SSH connection to `192.168.0.10` as `smithy` (`smithy@192.168.0.10`) using the cracked password.
