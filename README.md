@@ -95,7 +95,9 @@ A comprehensive penetration test was conducted across target subnets `10.5.5.0/2
      ![Query](Images/Smb1.png)
      ![Query](Images/Smb2.png)
   2. Identified SMB host `10.5.5.14` and enumerated shared directories.
-  4. Discovered unauthenticated read access allowed on the `Workfiles` and `Print$` shares.
+     ![Query](Images/Enum1.png)
+     ![Query](Images/Enum2.png)
+  3. Discovered unauthenticated read access allowed on the `Workfiles` and `Print$` shares.
   5. Connected via SMB client, navigated to the target directory, and downloaded the flag document.
 * **Proof of Concept & Results:**
   * **SMB Server IP:** `10.5.5.14`
