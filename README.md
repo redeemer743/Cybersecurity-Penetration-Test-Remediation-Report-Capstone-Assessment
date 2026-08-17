@@ -92,9 +92,11 @@ A comprehensive penetration test was conducted across target subnets `10.5.5.0/2
 * **Vulnerability:** Unauthenticated/Anonymous SMB Share Access
 * **Execution Summary:**
   1. Scanned `10.5.5.0/24` for open SMB services (ports 139/445).
+     ![Query](Images/Smb1.png)
+     ![Query](Images/Smb2.png)
   2. Identified SMB host `10.5.5.14` and enumerated shared directories.
-  3. Discovered unauthenticated read access allowed on the `Workfiles` and `Print$` shares.
-  4. Connected via SMB client, navigated to the target directory, and downloaded the flag document.
+  4. Discovered unauthenticated read access allowed on the `Workfiles` and `Print$` shares.
+  5. Connected via SMB client, navigated to the target directory, and downloaded the flag document.
 * **Proof of Concept & Results:**
   * **SMB Server IP:** `10.5.5.14`
   * **Enumerated Shares:** `Homes`, `Workfiles`, `IPC$`, `Print$`
