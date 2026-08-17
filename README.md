@@ -71,7 +71,7 @@ A comprehensive penetration test was conducted across target subnets `10.5.5.0/2
      ![Query](Images/Config_Targetpath.png)
 ![Query](Images/Docs.png)
   * **Target File Search Paths:** `Config` and `external`
-  *  ![Query](Images/Config_Targetpath.png)
+     ![Query](Images/Config_Targetpath.png)
 ![Query](Images/External.png)
   * **Filename:** `db_form.htmlere.`
   * **Flag File Location:** `Config`
