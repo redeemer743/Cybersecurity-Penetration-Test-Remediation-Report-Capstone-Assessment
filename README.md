@@ -32,7 +32,7 @@ A comprehensive penetration test was conducted across target subnets `10.5.5.0/2
   * **Bob Smith Password:** `password`
     ![Query](Images/hash.png)
   * **SSH Access Command:** `ssh smithy@192.168.0.10`
-  * ![Query](Images/SSH_Login.png)
+   ![Query](Images/SSH_Login.png)
   * **Flag Filename:** `my_passwords.txt`
     ![Query](Images/Smithy.png)
   * **Flag Content:** `Congratulations! You found the flag for Challenge 1!`
