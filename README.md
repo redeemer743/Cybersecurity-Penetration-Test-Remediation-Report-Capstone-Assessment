@@ -21,6 +21,7 @@ A comprehensive penetration test was conducted across target subnets `10.5.5.0/2
      ![Credentials](Images/DVWA_Login.png)
       ![Credentials](Images/DVWA_Interface.png)
      
+
   2. Injected SQL payloads into the user submission form to extract user account hashes from the database.
      ![Query](Images/DVWA_Queery.png)
      
