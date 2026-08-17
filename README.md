@@ -59,8 +59,8 @@ A comprehensive penetration test was conducted across target subnets `10.5.5.0/2
 * **Vulnerability:** Unrestricted Directory Indexing / Information Disclosure
 * **Execution Summary:**
   1. Performed web reconnaissance across web root directories.
-![Query](Images/ffuf1.png
-![Query](Images/ffuf2.png
+![ffuf](Images/ffuf1.png
+![ffuf](Images/ffuf2.png
   3. Identified exposed directories displaying raw index views via web browser URL manipulation.
   4. Navigated through index paths to uncover hidden resources (`db_form.html`) and retrieve the Challenge 2 flag code.
 * **Proof of Concept & Results:**
