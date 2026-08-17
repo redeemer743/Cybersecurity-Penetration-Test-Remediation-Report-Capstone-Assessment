@@ -65,7 +65,8 @@ A comprehensive penetration test was conducted across target subnets `10.5.5.0/2
      ![Query](Images/Config_Targetpath.png)
 ![Query](Images/Docs.png)
 ![Query](Images/External.png)
-  4. Navigated through index paths to uncover hidden resources (`db_form.html`) and retrieve the Challenge 2 flag code.
+  3. Navigated through index paths to uncover hidden resources (`db_form.html`) and retrieve the Challenge 2 flag code.
+     ![Query](Images/Uncover.png)
 * **Proof of Concept & Results:**
   * **Indexed Web Directories:** `Config` and `docs`
      ![Query](Images/Config_Targetpath.png)
@@ -75,8 +76,10 @@ A comprehensive penetration test was conducted across target subnets `10.5.5.0/2
 ![Query](Images/External.png)
   * **Filename:** `db_form.htmlere.`
   * **Flag File Location:** `Config`
+    ![Query](Images/Config_Targetpath.png)
   * **Flag Content:** `Great work! You found the flag file for Challenge 2!`
   * **Flag Code:** `aWe-4975`
+    ![Query](Images/Uncover.png)
 
 * **Remediation Methods:**
   1. **Disable Directory Indexing:** Configure web server controls (e.g., `Options -Indexes` in Apache) to deny directory browsing.
