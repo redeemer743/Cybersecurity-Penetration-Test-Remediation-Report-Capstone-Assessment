@@ -19,16 +19,16 @@ A comprehensive penetration test was conducted across target subnets `10.5.5.0/2
   1. Authenticated to `10.5.5.12` with initial credentials `admin / password` and configured DVWA security to Low.
   2. Injected SQL payloads into the user submission form to extract user account hashes from the database.
   3. Extracted Bob Smith’s credential hash and cracked the plaintext password using hash-cracking utilities.
-  4. Established an SSH connection to `192.168.0.10` as `Smithy` (`Smithy@192.168.0.10`) using the cracked password.
+  4. Established an SSH connection to `192.168.0.10` as `smithy` (`smithy@192.168.0.10`) using the cracked password.
   5. Inspected the user home directory to recover the flag file.
 * **Proof of Concept & Results:**
   * **Bob Smith Password:** `password`
-  * **SSH Access Command:** `ssh Smithy@192.168.0.10`
+  * **SSH Access Command:** `ssh smithy@192.168.0.10`
   * **Flag Filename:** `my_passwords.txt`
   * **Flag Content:** `Congratulations! You found the flag for Challenge 1!`
   * **Flag Code:** `8748wf8J`
 
-![SQL Injection and Target Compromise](images/challenge1-sqli.png)  
+![SQL Injection and Target Compromise](Images/DVWA.jpg)  
 *Figure 1: Executing SQL injection and accessing the target via SSH to extract the Challenge 1 flag.*
 
 * **Remediation Methods:**
