@@ -99,7 +99,6 @@ A comprehensive penetration test was conducted across target subnets `10.5.5.0/2
      ![Query](Images/Enum2.png)
   3. Discovered unauthenticated read access allowed on the `Workfiles` and `Print$` shares.
      ![Query](Images/Workfiles.png)
-     ![Query](Images/Prints.png)
   4. Connected via SMB client, navigated to the target directory, and downloaded the flag document.
      ![Query](Images/Contents.png)
 * **Proof of Concept & Results:**
@@ -107,7 +106,7 @@ A comprehensive penetration test was conducted across target subnets `10.5.5.0/2
   * **Enumerated Shares:** `Homes`, `Workfiles`, `IPC$`, `Print$`
   * **Anonymous Access Shares:** `Workfiles`, `Print$`
     ![Query](Images/Workfiles.png)
-     ![Query](Images/Print.png)
+     ![Query](Images/Prints.png)
   * **Flag Share Path:** `OTHER`
      ![Query](Images/Get.png)
   * **Flag Filename:** `sxij42.txt.`
