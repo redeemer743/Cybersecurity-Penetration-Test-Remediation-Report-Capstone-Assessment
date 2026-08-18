@@ -114,9 +114,6 @@ A comprehensive penetration test was conducted across target subnets `10.5.5.0/2
   * **Flag Code:** `NWs39691`
      ![Query](Images/Contents.png)
 
-![Unsecured SMB Share Enumeration](images/challenge3-smb.png)  
-*Figure 3: Connecting to the SMB target with anonymous credentials and retrieving the target flag.*
-
 * **Remediation Methods:**
   1. **Network Isolation & Segmentation:** Segment SMB endpoints and enforce access controls across internal VLANs.
   2. **Firewall & Access Control Rules:** Enforce network firewalls to block unauthorized SMB traffic and require strong user authentication for all shared resources.
@@ -128,9 +125,12 @@ A comprehensive penetration test was conducted across target subnets `10.5.5.0/2
 * **Vulnerability:** Transmission of Sensitive Data via Unencrypted Protocols (HTTP Clear-Text)
 * **Execution Summary:**
   1. Parsed `SA.pcap` in Wireshark to reconstruct HTTP streams and discover target network paths.
+      ![Query](Images/Pcap.png)
   2. Extracted host target IP address `10.5.5.11` and identified sensitive endpoints.
-  3. Reconstructed the HTTP URL (`http://10.5.5.11/data/user_accounts.xml`) exposing employee credentials in clear text.
-  4. Isolated Employee ID `0` record to extract flag credentials.
+     ![Query](Images/Ip.png)
+     ![Query](Images/Ipp.png)
+  4. Reconstructed the HTTP URL (`http://10.5.5.11/data/user_accounts.xml`) exposing employee credentials in clear text.
+  5. Isolated Employee ID `0` record to extract flag credentials.
 * **Proof of Concept & Results:**
   * **Target Computer IP:** `10.5.5.11`
   * **Discovered Directories:** `Data`, `includes`, `passwords`, `phpmyadmin`, `test`, `images`, `styles`, `webservices`
