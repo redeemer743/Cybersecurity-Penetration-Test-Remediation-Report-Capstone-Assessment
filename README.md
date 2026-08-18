@@ -129,17 +129,30 @@ A comprehensive penetration test was conducted across target subnets `10.5.5.0/2
   2. Extracted host target IP address `10.5.5.11` and identified sensitive endpoints.
      ![Query](Images/Ip.png)
      ![Query](Images/Ipp.png)
-  4. Reconstructed the HTTP URL (`http://10.5.5.11/data/user_accounts.xml`) exposing employee credentials in clear text.
-  5. Isolated Employee ID `0` record to extract flag credentials.
+  3. Reconstructed the HTTP URL (`http://10.5.5.11/data/user_accounts.xml`) exposing employee credentials in clear text.
+     ![Query](Images/Data.png)
+     ![Query](Images/Id1.png)
+     ![Query](Images/Id2.png)
+     ![Query](Images/Id3.png)
+     ![Query](Images/Id4.png)
+     ![Query](Images/Id5.png)
+  4. Isolated Employee ID `0` record to extract flag credentials.
+      ![Query](Images/Id1.png)
 * **Proof of Concept & Results:**
   * **Target Computer IP:** `10.5.5.11`
   * **Discovered Directories:** `Data`, `includes`, `passwords`, `phpmyadmin`, `test`, `images`, `styles`, `webservices`
+    ![Query](Images/Ip.png)
+     ![Query](Images/Ipp.png)
   * **Full Target URL:** `http://10.5.5.11/data/user_accounts.xml`
+    ![Query](Images/Id1.png)
+     ![Query](Images/Id2.png)
+     ![Query](Images/Id3.png)
+     ![Query](Images/Id4.png)
+     ![Query](Images/Id5.png)
   * **Employee ID 0 Message:** `Here is the Code for Challenge 4!`
   * **Flag Code:** `21z-1478K`
+     ![Query](Images/Id1.png)
 
-![Wireshark Traffic Analysis](images/challenge4-wireshark.png)  
-*Figure 4: Inspecting HTTP clear-text streams in Wireshark to extract target user account information.*
 
 * **Remediation Methods:**
   1. **HTTPS / TLS Encryption:** Migrate clear-text web interfaces to HTTPS utilizing TLS/SSL encryption.
