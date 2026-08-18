@@ -109,10 +109,10 @@ A comprehensive penetration test was conducted across target subnets `10.5.5.0/2
     ![Query](Images/Workfiles.png)
      ![Query](Images/Print.png)
   * **Flag Share Path:** `OTHER`
-     ![Query](Images/Other.png)
+     ![Query](Images/Get.png)
   * **Flag Filename:** `sxij42.txt.`
   * **Flag Code:** `NWs39691`
-     ![Query](Images/Content.png)
+     ![Query](Images/Contents.png)
 
 ![Unsecured SMB Share Enumeration](images/challenge3-smb.png)  
 *Figure 3: Connecting to the SMB target with anonymous credentials and retrieving the target flag.*
