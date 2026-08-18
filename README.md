@@ -98,14 +98,21 @@ A comprehensive penetration test was conducted across target subnets `10.5.5.0/2
      ![Query](Images/Enum1.png)
      ![Query](Images/Enum2.png)
   3. Discovered unauthenticated read access allowed on the `Workfiles` and `Print$` shares.
-  5. Connected via SMB client, navigated to the target directory, and downloaded the flag document.
+     ![Query](Images/Workfiles.png)
+     ![Query](Images/Print.png)
+  4. Connected via SMB client, navigated to the target directory, and downloaded the flag document.
+     ![Query](Images/Content.png)
 * **Proof of Concept & Results:**
   * **SMB Server IP:** `10.5.5.14`
   * **Enumerated Shares:** `Homes`, `Workfiles`, `IPC$`, `Print$`
   * **Anonymous Access Shares:** `Workfiles`, `Print$`
+    ![Query](Images/Workfiles.png)
+     ![Query](Images/Print.png)
   * **Flag Share Path:** `OTHER`
+     ![Query](Images/Other.png)
   * **Flag Filename:** `sxij42.txt.`
   * **Flag Code:** `NWs39691`
+     ![Query](Images/Content.png)
 
 ![Unsecured SMB Share Enumeration](images/challenge3-smb.png)  
 *Figure 3: Connecting to the SMB target with anonymous credentials and retrieving the target flag.*
